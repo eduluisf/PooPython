@@ -4,7 +4,8 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
- base: '/PooPython/', // <-- cambia según tu caso
+ base: '/PooPython/', 
+  build: { outDir: 'build' },// <-- cambia según tu caso
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     alias: {
